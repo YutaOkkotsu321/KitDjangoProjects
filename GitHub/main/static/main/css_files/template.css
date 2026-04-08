@@ -1,0 +1,66 @@
+html, body {
+    height: 100%;
+
+    background-color: black;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    padding-left: 20px;
+    line-height: 30px;
+}
+
+
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 35px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.left-header p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn-plus {
+    border: 2px solid gray;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.line-divider {
+    height: 2px;
+    background-color: rgba(79, 79, 88, 0.73);
+}
+.main-content {
+    display: flex;
+    flex-grow: 1;
+}
+.repository-content {
+    height: auto;
+    background-color: rgba(33, 31, 31, 0.7);
+    padding: 15px;
+    width: 20%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.content {
+    background: black;
+    padding-top: 30px;
+    flex-grow: 1;
+    overflow-wrap: break-word;
+    text-align: center;
+}

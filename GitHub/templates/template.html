@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'main/css_files/template.css' %}">
+</head>
+<body>
+    <div class="header">
+        <div class="left-header">
+            <p>Dashboard</p>
+        </div>
+
+        <div class="right-header">
+            <div class="btn-plus">+</div>
+        </div>
+    </div>
+    <div class="line-divider"></div>
+
+    <div class="main-content">
+        <div class="repository-content">
+            {% block content_repository %}
+            {% endblock content_repository %}
+        </div>
+        <div class="content">
+            {% block content %}
+            {% endblock content %}
+        </div>
+
+    </div>
+</body>
+</html>

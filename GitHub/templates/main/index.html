@@ -1,0 +1,17 @@
+{% extends 'template.html' %}
+{% block content_repository %}
+    <ul>
+        <li>GitHub Repo</li>
+        <li>Portfolio Repo</li>
+
+    </ul>
+{% endblock content_repository %}
+
+{% block content %}
+    <h2>Home</h2>
+    <h2 style="margin-top: 20px">Top Headlines</h2>
+    {% for val in top_headlines %}
+        <p style="font-size: 20px; margin-top: 20px"><strong>Author: {{ val.author }}</strong></p>
+        <p style=" margin-top: 10px; font-size: 20px">Title: {{ val.title }}</p>
+    {% endfor %}
+{% endblock content %}

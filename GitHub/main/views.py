@@ -8,10 +8,11 @@ load_dotenv()
 # Create your views here.
 
 def index(request):
+    repos = Post.objects.all()
     newsapi = NewsApiClient(api_key=os.getenv('API_KEY'))
     top_headlines = newsapi.get_top_headlines(language='en')
 
-    context = {'top_headlines': top_headlines['articles'][:5]}
+    context = {'top_headlines': top_headlines['articles'][:5], 'repos': repos}
     return render(request, 'main/index.html', context=context)
 
 def repo(request):

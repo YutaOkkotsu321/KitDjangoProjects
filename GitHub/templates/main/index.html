@@ -1,6 +1,11 @@
 {% extends 'template.html' %}
 {% block content_repository %}
     <p style='font-size: 20px'>List of repositories:</p>
+    {% for repo in repos %}
+        <p style="margin-top: 10px"><span style="font-size: 16px; font-weight: bold;">Title:</span> {{ repo.title }}</p>
+        <p style="margin-bottom: 5px"><span style="font-size: 16px; font-weight: bold;">Description:</span>{{ repo.description }}</p>
+        <div class="line-divider"></div>
+    {% endfor %}
 {% endblock content_repository %}
 
 {% block content %}

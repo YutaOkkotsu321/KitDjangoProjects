@@ -8,6 +8,9 @@ load_dotenv()
 # Create your views here.
 
 def index(request):
+    if request.method == "POST":
+        Post.objects.all().delete()
+       
     repos = Post.objects.all()
     newsapi = NewsApiClient(api_key=os.getenv('API_KEY'))
     top_headlines = newsapi.get_top_headlines(language='en')

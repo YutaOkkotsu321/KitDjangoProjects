@@ -1,0 +1,10 @@
+{% extends 'template.html' %}
+
+{% block content %}
+<form method="post" class="repo-inputs">
+    {% csrf_token %}
+    <input type="text" name="title" placeholder="Repository title">
+    <input type="text" name="description" placeholder="Repository description">
+    <button type="submit" class="btn-add-repo">Add Repository</button>
+</form>
+{% endblock content %}

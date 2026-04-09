@@ -21,8 +21,12 @@ ul {
     line-height: 30px;
 }
 
-
-
+.title:hover {
+    cursor: pointer;
+}
+.btn-plus:hover {
+    cursor: pointer;
+}
 .header {
     display: flex;
     justify-content: space-around;
@@ -58,9 +62,43 @@ ul {
 }
 
 .content {
+    text-align: center;
+    gap: 10px;
     background: black;
     padding-top: 30px;
     flex-grow: 1;
     overflow-wrap: break-word;
+
+}
+
+.repo-inputs {
+    display: flex;
+    flex-direction: column;
+ 
+    padding-left: 200px;
+    gap: 16px;
+    max-width: 70%;
+}
+
+.repo-inputs input {
+    padding: 12px 14px;
+    border: 1px solid #c4c4c4;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+.repo-inputs input:focus {
+    border-color: #222;
+}
+
+
+
+.btn-add-repo {
+    max-width: 30%;
+    padding-top: 15px;
+    padding-bottom: 15px;
     text-align: center;
+    border: 1px solid;
+    border-radius: 18px;
 }

@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
     <link rel="stylesheet" href="{% static 'main/css_files/template.css' %}">
+
 </head>
 <body>
     <div class="header">
         <div class="left-header">
-            <p>Dashboard</p>
+            <p class="title">Dashboard</p>
         </div>
 
         <div class="right-header">
@@ -21,6 +23,7 @@
     <div class="main-content">
         <div class="repository-content">
             {% block content_repository %}
+                <p style='font-size: 20px'>List of repositories:</p>
             {% endblock content_repository %}
         </div>
         <div class="content">
@@ -29,5 +32,6 @@
         </div>
 
     </div>
+<script src="{% static 'main/js_files/index.js' %}"></script>
 </body>
 </html>

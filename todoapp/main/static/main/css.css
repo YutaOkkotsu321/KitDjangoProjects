@@ -1,0 +1,45 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-side {
+    background-color: rgb(68, 67, 67);;
+    flex: 1; 
+}
+
+.right-side {
+    background-color:  #1e1e1c;
+    flex: 3; 
+}
+
+.nav-lists {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.nav-lists button {
+    font-size: 20px;
+    color: white;
+    border-radius: 20px;
+    border: 1px solid rgb(101, 101, 101, 0.9);
+    background: transparent;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.tasks-completed {
+    border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #1e1e1c;
+    border-radius: 15px;
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-bottom: 7px;
+    margin-bottom: 30px;
+}

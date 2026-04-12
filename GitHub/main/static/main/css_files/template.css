@@ -53,26 +53,29 @@ ul {
 }
 .main-content {
     display: flex;
-    flex-grow: 1;
+    flex: 1;
 }
 .repository-content {
+    width: 300px;
+    flex-shrink: 0;
     height: auto;
     background-color: rgba(33, 31, 31, 0.7);
     padding: 15px;
-    width: 20%;
     overflow-wrap: break-word;
     word-wrap: break-word;
     word-break: break-all;
 }
 
 .content {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
     text-align: center;
     gap: 10px;
     background: black;
     padding-top: 30px;
-    flex-grow: 1;
     overflow-wrap: break-word;
-
+    word-break: break-word;
 }
 
 .repo-inputs {

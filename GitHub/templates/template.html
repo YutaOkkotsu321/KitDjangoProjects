@@ -17,7 +17,7 @@
         <div class="btn-plus">+</div>
         <form method="POST" class="btn-clean-container">
           {% csrf_token %}
-          <button class="btn-clean">Clean my repositories</button>
+          <button class="btn-clean" name='action' value="clean-btn">Clean my repositories</button>
         </form>
       </div>
     </div>
@@ -25,7 +25,14 @@
 
     <div class="main-content">
       <div class="repository-content">
-        {% block content_repository %} {% endblock content_repository %}
+        {% block content_repository %}
+      <p style='font-size: 20px;'>List of repositories:</p>
+      {% for repo in repos %}
+       <p style="margin-top: 10px;"><a style='text-decoration: none; color: white' href="{% url 'repo_detail' repo.pk %}"><strong>Title:</strong> {{ repo.title }}</a></p>
+<p style="margin-bottom: 10px;"><a style='text-decoration: none; color: white;' href="{% url 'repo_detail' repo.pk %}"><strong>Description:</strong> {{ repo.description }}</a></p>
+        <div class="line-divider"></div>
+    {% endfor %}
+{% endblock content_repository %}
       </div>
       <div class="content">{% block content %} {% endblock content %}</div>
     </div>

@@ -1,20 +1,10 @@
-{% extends 'template.html' %} {% block content_repository %}
-<p style="font-size: 20px">List of repositories:</p>
-{% for repo in repos %}
-<p style="margin-top: 10px">
-  <span style="font-size: 16px; font-weight: bold">Title:</span> {{ repo.title
-  }}
-</p>
-<p style="margin-bottom: 5px">
-  <span style="font-size: 16px; font-weight: bold">Description:</span>{{
-  repo.description }}
-</p>
-<div class="line-divider"></div>
-{% endfor %} {% endblock content_repository %} {% block content %}
+{% extends 'template.html' %} 
+
+ {% block content %}
 <form method="post" class="repo-inputs">
   {% csrf_token %}
   <input type="text" name="title" placeholder="Repository title" />
   <input type="text" name="description" placeholder="Repository description" />
-  <button type="submit" class="btn-add-repo">Add Repository</button>
+  <button value="add-btn" name='action' type="submit" class="btn-add-repo">Add Repository</button>
 </form>
 {% endblock content %}

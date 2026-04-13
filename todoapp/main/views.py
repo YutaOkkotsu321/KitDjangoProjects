@@ -7,5 +7,3 @@ def main(request):
     cnt_time = date.today()
     return render(request, "main/index.html", { 'cnt_time': cnt_time })
 
-def add(request):
-    return render(request, "main/add.html")

@@ -43,3 +43,24 @@ html, body {
     padding-bottom: 7px;
     margin-bottom: 30px;
 }
+button {
+    cursor: pointer;
+}
+.hidden-add-task {
+    display: none;
+}
+.work-add-task {
+    position: fixed;
+    top: 20%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+.final-add-btn {
+    padding: 10px 20px; 
+    border-radius: 15px; 
+    border: none; 
+    background-color: rgb(94, 94, 197);
+}
+.final-add-btn:hover {
+    background-color: rgb(63, 49, 126);
+}

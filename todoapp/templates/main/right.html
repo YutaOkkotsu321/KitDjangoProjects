@@ -1,1 +1,11 @@
-<h2>Yes</h2>
+<div style="display: flex; flex-direction: row; justify-content: space-between; padding-top: 20px">
+    <p style="color: gray; font-size: 20px;">{{ cnt_time }}</p>
+    <button style="color: white; background-color: orange; border-radius: 20px; border: none; padding: 10px 20px; font-size: 18px;;"><a href="{% url 'add' %}">+ Add task</a></button>
+</div>
+<div style="height: 2px; background-color: gray; margin-top: 20px; margin-bottom: 10px;"></div>
+<div style="display: flex; gap: 10px; padding-left: 20px; padding-top: 18px;">
+    <button style="color: white; background-color:transparent ; border: 1px solid gray; padding: 10px 20px; font-size: 18px;border-radius: 15px;">Pending</button>
+    <button style="color: white; background-color:transparent ; border: 1px solid gray; padding: 10px 20px; font-size: 18px; border-radius: 15px;">Completed</button>
+    <button style="color: white; background-color:transparent ; border: 1px solid gray; padding: 10px 20px; font-size: 18px; border-radius: 15px;">All</button>
+</div>
+<div style="height: 2px; background-color: gray; margin-top: 20px; margin-bottom: 10px;"></div>

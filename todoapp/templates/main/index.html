@@ -12,8 +12,8 @@
         <div class="left-side">
             {% include 'main/left.html' %}
         </div>
-        <div class="right-side">
-            {% include 'main/right.html' %}
+        <div class="right-side" style="padding-left: 20px; padding-right: 20px;">
+            {% include 'main/right.html' with cnt_time=cnt_time %}
         </div>
     </div>
 </body>

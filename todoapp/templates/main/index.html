@@ -15,7 +15,7 @@
         <div class="right-side" style="padding-left: 20px; padding-right: 20px;">
             {% include 'main/right.html' with cnt_time=cnt_time %}
             <div id='container-add-btn' class="hidden-add-task">
-                <form method="post">
+                <form method="post" id="container-add-btn form">
                     {% csrf_token %}
                     <input name='task_input' style="padding: 10px 20px; border: none; border-radius: 20px;" placeholder="Task">
                     <button id="final-add-btn">Add!</button>

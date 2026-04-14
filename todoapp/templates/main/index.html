@@ -21,7 +21,19 @@
                     <button id="final-add-btn">Add!</button>
                 </form>
             </div>
+            <div id="container-of-todos">
+            
+            {% for todo in all_todos %}
+                    <div>
+                <input type="checkbox">
+                <label style="color: white; font-family: 'Courier New', Courier, monospace; font-size: 20px;">{{ todo }}</label>
+                    </div>
+                  
+                {% endfor %}
+            
         </div>
+        </div>
+        
     </div>
     <script src="{% static 'main/index.js' %}"></script>
 </body>

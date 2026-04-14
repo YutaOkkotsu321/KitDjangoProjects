@@ -11,7 +11,6 @@ def main(request):
         
 
         return redirect(request.path)
-
+    all_todos = ToDo.objects.all()
     cnt_time = date.today()
-    return render(request, "main/index.html", { 'cnt_time': cnt_time })
-
+    return render(request, "main/index.html", { 'cnt_time': cnt_time, 'all_todos': all_todos })

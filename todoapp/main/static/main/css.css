@@ -68,3 +68,8 @@ button {
 .subtext:hover {
     background-color: #1e1e1c;
 }
+#container-of-todos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

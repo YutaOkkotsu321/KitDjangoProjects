@@ -16,7 +16,7 @@ form.addEventListener('submit', (e) => {
     fetch('', {
         method: "POST",
         body: formData,
-        headers: {'X-CSRFToken': formData.get('csfrmiddlewaretoken')}
+        headers: {'X-CSRFToken': formData.get('csrfmiddlewaretoken')}
     }).then(() => {
         form.reset();
     })

@@ -55,12 +55,12 @@ button {
     left: 70%;
     transform: translate(-50%, -50%);
 }
-.final-add-btn {
+#final-add-btn {
     padding: 10px 20px; 
     border-radius: 15px; 
     border: none; 
     background-color: rgb(94, 94, 197);
 }
-.final-add-btn:hover {
+#final-add-btn:hover {
     background-color: rgb(63, 49, 126);
 }

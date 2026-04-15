@@ -9,3 +9,15 @@ btn_addTask.addEventListener('click', () => {
     }
     
 })
+
+
+document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+    cb.addEventListener('change', function () {
+        const id = this.dataset.id;
+        const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+        fetch(`/toggle/${id}/`, {
+            method: 'POST',
+            headers: { 'X-CSRFToken': csrfToken }
+        });
+    });
+});

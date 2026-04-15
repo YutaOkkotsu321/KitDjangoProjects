@@ -73,3 +73,9 @@ button {
     flex-direction: column;
     gap: 20px;
 }
+.btn-section {
+    color: white; background-color:transparent ; border: 1px solid gray; padding: 10px 20px; font-size: 18px;border-radius: 15px;
+}
+.btn-section:hover {
+    background-color: rgb(63, 49, 126);
+}

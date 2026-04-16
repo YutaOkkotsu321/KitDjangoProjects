@@ -19,5 +19,10 @@ document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
             method: 'POST',
             headers: { 'X-CSRFToken': csrfToken }
         });
+        const total = document.querySelectorAll('input[type="checkbox"]').length
+    const completed = document.querySelectorAll('input[type="checkbox"]:checked').length
+    document.getElementById("task-counter").textContent = `${completed} / ${total}`
     });
+    
+    
 });

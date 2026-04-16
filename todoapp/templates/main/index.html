@@ -19,6 +19,7 @@
                     {% csrf_token %}
                     <input name='task_input' style="padding: 10px 20px; border: none; border-radius: 20px;" placeholder="Task">
                     <button id="final-add-btn">Add!</button>
+                
                 </form>
             </div>
             <div id="container-of-todos">
@@ -27,7 +28,6 @@
                     <div>
                 <input type="checkbox" data-id="{{ todo.id }}" {% if todo.completed %}checked{% endif %}>
                 <label style="color: white; font-family: 'Courier New', Courier, monospace; font-size: 20px;">{{ todo }}</label>
-               
                     </div>
                   
                 {% endfor %}
